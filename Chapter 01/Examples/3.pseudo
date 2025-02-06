@@ -1,0 +1,9 @@
+// Develop an algorithm to find the maximum of two numbers inuput by the user.
+START
+INPUT a, b
+IF (a > b) THEN
+    OUTPUT a
+ELSE
+    OUTPUT b
+END IF
+END

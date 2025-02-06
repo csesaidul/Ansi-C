@@ -1,0 +1,8 @@
+// Develop an algorithm to divide one number by another number and display the result.
+START
+INPUT a, b
+IF (b != 0) THEN
+        SET q = a/b
+        OUTPUT q
+    END IF
+END

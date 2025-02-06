@@ -1,0 +1,6 @@
+// Write an algorith to find the area of a circle given its radius.
+START
+INPUT r
+SET area = 3.14 * r * r
+OUTPUT area
+END

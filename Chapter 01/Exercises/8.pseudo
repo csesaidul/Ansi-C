@@ -1,0 +1,9 @@
+// Write an algorithm to find out whether three poins are collinear or not.
+START
+INPUT x1, y1, x2, y2, x3, y3
+IF (y2 - y1) * (x3 - x2) = (y3 - y2) * (x2 - x1) THEN
+    OUTPUT "Collinear"
+ELSE
+    OUTPUT "Not collinear"
+END IF
+END

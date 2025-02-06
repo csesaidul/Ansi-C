@@ -1,0 +1,6 @@
+BEGIN
+INPUT a, b, c
+set sum = a + b + c
+set avg = sum / 3
+OUTPUT sum, avg
+END

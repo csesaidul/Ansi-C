@@ -1,0 +1,15 @@
+// Write an algorithm to find the roots of a quadratic equation.
+START
+INPUT a, b, c
+SET d = b * b - 4 * a * c
+IF (d > 0) THEN
+    SET r1 = (-b + sqrt(d)) / (2 * a)
+    SET r2 = (-b - sqrt(d)) / (2 * a)
+    OUTPUT r1, r2
+ELSE IF (d = 0) THEN
+    SET r = -b / (2 * a)
+    OUTPUT r
+ELSE
+    OUTPUT "No real roots"
+END IF
+END

@@ -1,0 +1,6 @@
+// Write an algorithm to compute the compound interest given the principal amount, rate of interest, and time.
+START
+INPUT principal, rate, time
+SET compound_interest = principal * (1 + rate / 100) ^ time - principal
+OUTPUT compound_interest
+END

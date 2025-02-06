@@ -1,0 +1,7 @@
+// Develop an algorithm to find the average of three numbers input by the user.
+START
+INPUT a, b, c
+SET sum = a + b + c
+SET avg = sum / 3
+OUTPUT avg
+END

@@ -1,0 +1,6 @@
+// Write an algorithm to compute the simple interest given the principal amount, rate of interest, and time.
+START
+INPUT principal, rate, time
+SET simple_interest = (principal * rate * time) / 100
+OUTPUT simple_interest
+END

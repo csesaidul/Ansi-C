@@ -1,0 +1,15 @@
+// Write an algorithm to assign the grades of a student based on the marks obtained in an exam.
+START
+INPUT marks
+IF marks >= 90 THEN
+    OUTPUT "Grade A"
+ELSE IF marks >= 80 THEN
+    OUTPUT "Grade B"
+ELSE IF marks >= 70 THEN
+    OUTPUT "Grade C"
+ELSE IF marks >= 60 THEN
+    OUTPUT "Grade D"
+ELSE
+    OUTPUT "Grade F"
+END IF
+END

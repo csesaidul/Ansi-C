@@ -1,0 +1,15 @@
+// Write an algorithm for finding the sum of only the even numbers out of 'N' numbers input by the user.
+START
+INPUT N
+I = 1
+SUM = 0
+WHILE (I <= N) DO
+    INPUT NUM
+    SET REM = NUM % 2
+    IF (REM == 0) THEN
+        SUM = SUM + NUM
+    END IF
+    I = I + 1
+END WHILE
+OUTPUT SUM
+END

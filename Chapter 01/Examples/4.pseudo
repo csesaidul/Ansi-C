@@ -1,0 +1,11 @@
+//Develop an algorithm to find the sum of the first n natural numbers.
+START
+INPUT n
+I = 1
+SUM = 0
+WHILE (I <= n) DO
+    SUM = SUM + I
+    I = I + 1
+END WHILE
+OUTPUT SUM
+END
