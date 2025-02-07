@@ -1,0 +1,161 @@
+1. State whether each of the following statements is true or false. If false, explain why.
+    (a) Every line in a C program must end with a semicolon.
+        answer: False. Only statements must end with a semicolon.
+    (b) The closing brace of the main() in a program is the logical end of the program.
+        answer: False. The closing brace of the main() function is the logical end of the main() function, not the program.
+    (c) Comments cuase the computer to print the text exclosed between /* and */ when executed.
+        answer: False. Comments are ignored by the compiler.
+    (d) Every C program ends with an END word.
+        answer: False. C programs do not end with an END word.
+    (e) A printf statement can generate only one line of output.
+        answer: False. A printf statement can generate multiple lines of output.
+    (f) The purpose of the header file such as stdio.h is to store the source code of a program.
+        answer: False. The purpose of the header file is to provide the compiler with information about the functions used in the program.
+    (g) A line in a program may have more than one statement.
+        answer: False. A line in a program may have at most one statement.
+    (h) Syntax errors will be detected by the compiler.
+        answer: True.
+    (i) In C language lowercase letters are significant.
+        answer: True.
+    (j) main() is where the program begins execution.
+        answer: True.
+    (k) Every C program must have at least one user-defined function.
+        answer: False. A C program may not have any user-defined functions.
+    (l) Decration section contains instructions to the computer.
+        answer: False. The declaration section contains declarations of variables and functions.
+    (m) Only one function may be named main().
+        answer: True.
+    (n) Comments serve as internal documentation.
+        answer: True.
+    (o) In C, we can have comments inside comments.
+        answer: False. Comments cannot be nested.
+    (p) Use of comments reduces the speed of execution of a program.
+        answer: False. Comments are ignored by the compiler.
+2. Fill in the blanks with appropriate words in each of the following statements.
+    (a) Every program statement in a C program must end with a __________.
+        answer: semicolon
+    (b) The __________ Function in used to display the output on the screen.
+        answer: printf
+    (c) The __________ header file contains mathematical functions.
+        answer: math
+    (d) The escape sequence character __________ cuases the cursor to move to the beginning of the next line.
+        answer: \n
+    (e) C programs are written in lower case letters whereas upper case letters are mainly use to define __________.
+        answer: constants
+    (f) C language offers several built-in __________ that can be used in a program by including the relavant header file.
+        answer: functions
+    (g) __________ indicates the starting point of a C program.
+        answer: main()
+3. Remove the semicolon at the end of the printf statement in the program given below. What is the result?
+    #include <stdio.h>
+    int main()
+    {
+        printf("Hello, World!")
+        return 0;
+    }
+    answer: The program will not compile. The compiler will generate an error message.
+4. In the program given, delete line-3 and execute the program. How helpful is the error message?
+    // Adding two numbers
+    #include <stdio.h>
+    int main() {
+        int a, b, sum;
+        a = 10;
+        b = 20;
+        sum = a + b;
+        printf("Sum of %d and %d is %d\n", a, b, sum);
+        return 0;
+    }
+    answer: The error message will be helpful. The compiler will generate an error message indicating that the printf function is not declared.
+5. Modify the program given below to print the following output:
+    // Interest calculattin using for loop
+    #include <stdio.h>
+    int main() {
+        float p, r, t, si;
+        p = 5000.00;
+        r = 11;
+        for (t = 1; t <= 10; t++) {
+            si = p * r * t / 100;
+            printf("Simple Interest for %.0f years is %.2f\n", t, si);
+        }
+        return 0;
+    }
+    output:
+        Year        Amount
+        1           5500.00
+        2           6160.00
+        __         __________
+        __         __________
+        10         14197.11
+    answer:
+        // Interest calculattin using for loop
+        #include <stdio.h>
+        int main() {
+            float p, r, t, si;
+            p = 5000.00;
+            r = 11;
+            printf("Year\tAmount\n");
+            for (t = 1; t <= 10; t++) {
+                si = p * r * t / 100;
+                printf("%.0f\t%.2f\n", t, si + p);
+            }
+            return 0;
+        }
+6. Why and when do we use the #define directive?
+    answer: The #define directive is used to define constants. Constants are used to make the program more readable and maintainable. Constants are used when the value of a variable is not expected to change during the execution of the program.
+7. Why and when do we use the #include directive?
+    answer: The #include directive is used to include header files in a C program. Header files contain declarations of functions and variables that are used in the program. The #include directive is used when the program needs to use functions or variables defined in a header file.
+8. What does void main(void) mean?
+    answer: The void main(void) declaration is not valid in C. The main function in C should be declared as int main(void) or int main(int argc, char *argv[]).
+9. Distinguish between the following pairs:
+        (a) main() and void main(void)
+        (b) int main() and void main()
+    answer:
+        (a) main() is the standard entry point for a C program, while void main(void) is an invalid declaration in C.
+        (b) int main() is the standard declaration for the main function in C, while void main() is an invalid declaration in C.
+10. Why do we need to use comments in a program?
+    answer: Comments are used in a program to provide information about the program to the programmer. Comments help in understanding the code, documenting the code, and making the code more readable and maintainable. Comments are also used to disable parts of the code during testing or debugging.
+11. Why is the look of a program important?
+    answer: The look of a program is important because it affects the readability and maintainability of the code. A well-formatted and well-organized program is easier to understand, modify, and debug. The look of a program also reflects the programmer's professionalism and attention to detail.
+12. Where are blank blank spaces permitted in a C program?
+    answer: Blank spaces are permitted in a C program between keywords, identifiers, operators, and other tokens. Blank spaces are used to separate tokens and improve the readability of the code. Blank spaces are not allowed within identifiers or keywords.
+13. Describe the structure of a C program.
+    answer: A C program consists of the following sections:
+        - Preprocessor directives: These directives start with a # symbol and are used to include header files, define constants, and perform other preprocessing tasks.
+        - Global declarations: These declarations include global variables and function prototypes that are used in the program.
+        - main function: The main function is the entry point of the program and contains the code that is executed when the program is run.
+        - User-defined functions: These functions are defined by the programmer to perform specific tasks in the program.
+        - Comments: Comments are used to provide information about the program and improve its readability.
+14. Describe the process of creating and excuting a C program.
+    answer: The process of creating and executing a C program involves the following steps:
+        1. Write the program code using a text editor or an integrated development environment (IDE).
+        2. Save the program code with a .c extension.
+        3. Compile the program using a C compiler to generate an executable file.
+        4. Run the executable file to execute the program and see the output.
+        5. Debug and test the program to ensure that it works correctly.
+15. How do we implement multiple source program files? (explain it in detail. how to create, compile, and link multiple source program files)
+    answer: To implement multiple source program files in C, follow these steps:
+        1. Create multiple source files, each containing a part of the program code.
+        2. Write the necessary function prototypes in header files to declare the functions used in the program.
+        3. Include the header files in the source files that use the functions.
+        4. Compile each source file separately using a C compiler to generate object files.
+        5. Link the object files together using the linker to create an executable file.
+        6. Run the executable file to execute the program and see the output.
+        Example:
+            // file1.c
+            #include "header.h"
+            int main() {
+                function1();
+                return 0;
+            }
+            // file2.c
+            #include "header.h"
+            void function1() {
+                printf("Function 1\n");
+            }
+            // header.h
+            void function1();
+        To compile and link the program:
+            gcc -c file1.c
+            gcc -c file2.c
+            gcc -o program file1.o file2.o
+            ./program

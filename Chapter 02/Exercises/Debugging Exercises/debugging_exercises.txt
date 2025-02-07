@@ -1,0 +1,24 @@
+1. Find errors, if any, int the folowing program:
+    /* A simple program
+    int main()
+    {
+        /* Does nothing */
+    }
+    answer: The program will not compile. The compiler will generate an error message. The opening comment delimiter /* is not closed.
+2. Find errors, if any, in the following program:
+    #include <stdio.h>
+    void main(void)
+    {
+        printf("Hello, World!\n");
+    }
+    answer: The program will compile and execute successfully. However, the main function should return an integer value. The correct prototype for the main function is int main(void).
+3. Find errors, if any, in the following program:
+    #include <math.h>
+    main()
+    {
+        FLOAT X;
+        X = 2.5;
+        Y = exp(x);
+        Print(x,y);
+    }
+    answer: The program will not compile. The compiler will generate an error message. The data type float should be written in lowercase. The function print should be written in lowercase. The variable y should be declared before it is used.
