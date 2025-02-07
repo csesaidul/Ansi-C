@@ -1,0 +1,10 @@
+// Write an algorithm to find the sum of the following series:
+// 1*2 + 2*3 + 3*4 + 4*5 + ... + n*(n+1)
+START
+INPUT n
+sum = 0
+FOR i = 1 TO n
+    sum = sum + i * (i + 1)
+END FOR
+OUTPUT sum
+END

@@ -1,0 +1,18 @@
+// Write an algorithm to find the sum of all the prime numbers between n and m.
+START
+INPUT n, m
+sum = 0
+FOR i = n TO m
+    prime = 1
+    FOR j = 2 TO i - 1
+        IF i % j == 0
+            prime = 0
+            BREAK
+        END IF
+    END FOR
+    IF prime == 1
+        sum = sum + i
+    END IF
+END FOR
+OUTPUT sum
+END

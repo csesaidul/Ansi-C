@@ -1,0 +1,29 @@
+// Write an algorithm to display in words the digts of a number.
+START
+INPUT number
+WHILE number > 0
+    digit = number % 10
+    number = number / 10
+    IF digit == 0
+        OUTPUT "Zero"
+    ELSE IF digit == 1
+        OUTPUT "One"
+    ELSE IF digit == 2
+        OUTPUT "Two"
+    ELSE IF digit == 3
+        OUTPUT "Three"
+    ELSE IF digit == 4
+        OUTPUT "Four"
+    ELSE IF digit == 5
+        OUTPUT "Five"
+    ELSE IF digit == 6
+        OUTPUT "Six"
+    ELSE IF digit == 7
+        OUTPUT "Seven"
+    ELSE IF digit == 8
+        OUTPUT "Eight"
+    ELSE IF digit == 9
+        OUTPUT "Nine"
+    END IF
+END WHILE
+END

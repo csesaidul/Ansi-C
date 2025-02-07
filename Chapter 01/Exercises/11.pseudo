@@ -1,0 +1,10 @@
+// Write an algorith to find the sum of the following series:
+// 2 + 4 + 6 + 8 + ... + n
+START
+INPUT n
+sum = 0
+FOR i = 2 TO n STEP 2
+    sum = sum + i
+END FOR
+OUTPUT sum
+END

@@ -1,0 +1,12 @@
+// Write an algorithm to find the sum of the following series:
+// 1! + 2! + 3! + 4! + ... + n!
+START
+INPUT n
+sum = 0
+fact = 1
+FOR i = 1 TO n
+    fact = fact * i
+    sum = sum + fact
+END FOR
+OUTPUT sum
+END

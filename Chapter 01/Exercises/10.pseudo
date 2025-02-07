@@ -1,0 +1,10 @@
+// Write an algorithm to count the number of digits in a number.
+START
+INPUT number
+count = 0
+WHILE number > 0
+    number = number / 10
+    count = count + 1
+END WHILE
+OUTPUT count
+END

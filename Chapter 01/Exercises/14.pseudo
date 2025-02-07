@@ -1,0 +1,22 @@
+// Write an algorithm to find out wether a number is an Armstrong number or not.
+START
+INPUT number
+sum = 0
+count = 0
+temp = number
+WHILE number > 0
+    number = number / 10
+    count = count + 1
+END WHILE
+number = temp
+WHILE number > 0
+    digit = number % 10
+    sum = sum + digit ^ count
+    number = number / 10
+END WHILE
+IF sum == temp
+    OUTPUT "Armstrong number"
+ELSE
+    OUTPUT "Not an Armstrong number"
+END IF
+END

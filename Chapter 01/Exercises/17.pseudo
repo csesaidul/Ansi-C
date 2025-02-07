@@ -1,0 +1,10 @@
+// Write an algorithm to find out the sum of the following series:
+// 1^2 + 3^2 + 5^2 + 7^2 + ... + n terms
+START
+INPUT n
+sum = 0
+FOR i = 1 TO n STEP 2
+    sum = sum + i * i
+END FOR
+OUTPUT sum
+END

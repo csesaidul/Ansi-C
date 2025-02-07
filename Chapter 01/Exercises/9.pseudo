@@ -1,0 +1,16 @@
+// Write an algorithm to find out the age of a person correct to number of day(s), month(s) and year(s).
+START
+INPUT birthDate, birthMonth, birthYear, currentDate, currentMonth, currentYear
+IF currentDate < birthDate THEN
+    currentDate = currentDate + 30
+    currentMonth = currentMonth - 1
+END IF
+IF currentMonth < birthMonth THEN
+    currentMonth = currentMonth + 12
+    currentYear = currentYear - 1
+END IF
+day = currentDate - birthDate
+month = currentMonth - birthMonth
+year = currentYear - birthYear
+OUTPUT year, " year(s), ", month, " month(s), ", day, " day(s)"
+END
