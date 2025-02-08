@@ -1,0 +1,30 @@
+Choose the correct answer for each of the following multiple choice questions.
+1. Which of the following escape sequences moves the cursor position to the new line?
+    (a) \n          (b) \r          (c) \t          (d) \v
+
+2. Which of the following is not a C language keyword?
+    (a) Volatile    (b) enum        (c) unsigned    (d) go
+
+3. Which of the following is the correct way of specifying a long signed integer data type?
+    (a) signed long int             (b) long int
+    (c) unsigned long int           (d) Both 1 and 2
+
+4. Which of the following is not a C storage class?
+    (a) auto        (b) static      (c) register     (d) volatile
+
+5. Which of the following is the correct way of defining a symbol constant?
+    (a) #define MAX_MARKS 100    (b) #define MAX_MARKS = 100
+    (c) #define 100 MAX_MARKS    (d) #define 100 MAX_MARKS
+
+6. Which of the following statement is true about character constants in C?
+    (a) The statement print("%c", '97'); will print a.
+    (b) Each character constant represent an integer value.
+    (c) It is possible to perform arithmetic operations on character constants.
+    (d) All of the above.
+
+Answers:    1. (a) \n
+            2. (d) go
+            3. (d) Both 1 and 2
+            4. (d) volatile
+            5. (a) #define MAX_MARKS 100
+            6. (d) All of the above
