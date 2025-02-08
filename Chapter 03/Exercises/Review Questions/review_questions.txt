@@ -1,0 +1,143 @@
+1. State whether the following statements are true or false. If false, explain why.
+    (a) All variables must be given a type when they are declared.
+        answer: True
+    (b) ANSI C treats the variables name and Name to be same.
+        answer: False. ANSI C treats the variables name and Name as different because C is case-sensitive.
+    (c) character constants are enclosed in double quotes.
+        answer: False. Character constants are enclosed in single quotes.
+    (d) The keyword void is a data type in C.
+        answer: True
+    (e) Character constants are enclosed in single quotes while string constants are enclosed in double quotes.
+        answer: True
+    (f) Initialization is the process of assigning a value to a variable at the time of declaration.
+        answer: True
+    (g) The scanf function can be used to read only one value at a time.
+        answer: False. The scanf function can be used to read multiple values at a time.
+    (h) C allows its keywords to be used as identifiers.
+        answer: False. C does not allow its keywords to be used as identifiers.
+    (i) Auto variables are by default initialized to 0 as soon as they are declared.
+        answer: False. Auto variables are not initialized by default.
+    (j) Floating-point constants by default denote float type values.
+        answer: False. Floating-point constants by default denote double type values.
+    (k) Like variables, constants have a type.
+        answer: True
+    (l) All static variables are automatically initialized to zero.
+        answer: True
+
+2. Fill in the blanks with appropriate words.
+    (a) A variable can be made by declaring it with the qualifier ________ at the time of Initialization.
+        answer: const
+    (b) ________ is the largest value that an unsigned short int type variable can store.
+        answer: 65535
+    (c) A global variable is also known as a ________ variable.
+        answer: external
+    (d) The keyword ________ can be used to create a data type identifier.
+        answer: typedef
+    (e) If the number 987612347 is to be sued as an unsigned long integer then it must be appended by ________.
+        answer: UL
+    (f) ________ and ________ are used to define user-defined data types.
+        answer: struct, union
+    (g) The largest position integer value can be stored in ________ type variable.
+        answer: long
+
+3. What are trigraph characters? How are they useful?
+    answer: Trigraph characters are sequences of three characters that represent a single character. They are useful for representing characters that may not be easily accessible on all keyboards or character sets. Trigraph characters are enclosed in question marks (??) and are used to represent special characters in C programming. for example, the trigraph sequence ??( represents the opening square bracket ([), and the trigraph sequence ??! represents the logical NOT operator (!).
+
+4. Describe the four basic data types. How could we expend the range of values they represent?
+    answer: The four basic data types in C are int, char, float, and double. The int data type is used to store integer values, the char data type is used to store character values, the float data type is used to store single-precision floating-point values, and the double data type is used to store double-precision floating-point values. To expand the range of values they represent, we can use qualifiers such as short, long, signed, and unsigned. For example, the short int data type can store smaller integer values than the int data type, and the long int data type can store larger integer values. The signed and unsigned qualifiers can be used to represent positive and negative integer values, respectively.
+
+5. What is unsigned integer constant? What is the significance of declaring a constant unsigned?
+    answer: An unsigned integer constant is a constant that represents a positive integer value. The significance of declaring a constant as unsigned is that it allows the constant to represent a larger range of positive integer values than a signed constant. By declaring a constant as unsigned, we can ensure that it can store only non-negative values, which can be useful in situations where negative values are not required or are not meaningful.
+
+6. Describe the characteristics and purpose of escape sequence characters.
+    answer: Escape sequence characters are special sequences of characters that are used to represent non-printable or special characters in C programming. They are preceded by a backslash (\) and are used to perform specific actions such as moving the cursor to a new line, displaying special characters, or controlling the formatting of output. Escape sequence characters are used to enhance the readability and functionality of C programs by allowing programmers to include special characters and control the appearance of output.
+
+7. What is a variable and what is meant by the "value" of a variable?
+    answer: A variable is a named storage location in memory that is used to store data during the execution of a program. It has a specific data type that determines the type of data it can store, such as integers, characters, or floating-point values. The "value" of a variable refers to the data stored in the variable at a given point in time. It represents the content of the variable and can be read, modified, or assigned to other variables in the program.
+
+8. How do variable and symbolic names differ?
+    answer: Variable names are used to represent storage locations in memory that store data during the execution of a program, while symbolic names are used to represent constants or identifiers that have a specific meaning or value in the program. Variable names are associated with memory locations that can be read, modified, or assigned values, while symbolic names are used to define constants, data types, or other identifiers that are used throughout the program. Variable names are used to store and manipulate data, while symbolic names are used to define and reference specific values or identifiers in the program.
+
+9. State the differences between the declaration of a variable and the definition of a symbolic name.
+    answer: The declaration of a variable involves specifying the data type and name of the variable, while the definition of a symbolic name involves defining a constant or identifier with a specific value or meaning. Variables are used to store data during the execution of a program and must be declared with a specific data type, while symbolic names are used to represent constants or identifiers that have a fixed value or meaning in the program. Variables can be assigned values and modified during the execution of the program, while symbolic names are used to define constants that cannot be changed or modified.
+
+10. What are the qualifiers that an int can have at a time?
+    answer: An int data type in C can have the following qualifiers at a time:
+        - short
+        - long
+        - signed
+        - unsigned
+
+11. A programmer would like to use the word DPR to declare all the double-precision floating point values in his program. How could he achieve this?
+    answer: The programmer can achieve this by using the typedef keyword to create a data type identifier for double-precision floating-point values. For example, the programmer can define the following typedef statement:
+        typedef double DPR;
+    This statement creates a data type identifier DPR that can be used to declare double-precision floating-point variables in the program. The programmer can then use the DPR identifier to declare variables of type double.
+
+12. What are enumeration variables? How are they declared? What is the advantage of using them in program?
+    answer: Enumeration variables are user-defined data types that consist of a set of named integer constants. They are declared using the enum keyword followed by a list of constant names enclosed in curly braces. For example, the following declaration defines an enumeration type called color with three constant values:
+        enum color {RED, GREEN, BLUE};
+    The advantage of using enumeration variables in a program is that they provide a way to define and work with named integer constants that have a specific meaning or value. Enumeration variables make the code more readable and maintainable by using descriptive constant names instead of raw integer values. They also help prevent errors and improve code quality by enforcing type safety and restricting the values that can be assigned to variables.
+
+13. Describe the purpose of the qualifiers const and volatile.
+    answer: The const qualifier is used to declare constants in C programming. It specifies that a variable's value cannot be changed once it has been initialized. The const qualifier is used to define read-only variables that cannot be modified during the execution of the program. The volatile qualifier is used to indicate that a variable's value may change at any time, even if it is not explicitly modified by the program. It is typically used for variables that are accessed or modified by external sources, such as hardware registers or interrupt service routines. The volatile qualifier ensures that the compiler does not optimize or cache the variable's value and that it is always read from or written to memory.
+
+14. When dealing with very small or very large numbers, what steps would you take to improve the accuracy of the calculations?
+    answer: When dealing with very small or very large numbers, it is important to consider the limitations of the data types used to represent them. To improve the accuracy of calculations, you can use larger data types such as double or long double for floating-point values, or long long for integer values. These data types provide greater precision and range than standard data types like float or int, allowing you to perform calculations with higher accuracy. You can also use scientific notation or exponential form to represent very small or very large numbers, which can help prevent rounding errors and loss of precision in calculations.
+
+15. Which of the following are invalid constants and why?
+    0.0001      5 x 1.5      99999
+    +100        75.45 E-2    "15.75"
+    -45.6       -1.79 e + 4  0.00001234
+    answer: The following constants are invalid and the reasons are given below:
+        - 5 x 1.5: This is invalid because the multiplication operator x is not allowed in a constant. It should be written as 5 * 1.5.
+        - +100: This is invalid because the unary plus operator + is not allowed in a constant. It should be written as 100.
+        - 75.45 E-2: This is invalid because the exponential form should be written as 75.45e-2 (lowercase 'e').
+        - "15.75": This is invalid because double quotes are used to enclose string constants, not numeric constants. It should be written as 15.75.
+        - -1.79 e + 4: This is invalid because the exponential form should be written as -1.79e+4 (lowercase 'e').
+
+16. Which of the following are invalid variable names and why?
+    Minimum             First.name              n1+n2               &name
+    doubles             3rd_row                 n$                  Row1
+    float               Sum Total               Row Total           Column-total
+    answer: The following variable names are invalid and the reasons are given below:
+        - First.name: This is invalid because variable names cannot contain special characters like a period (.). It should be written as FirstName or First_name.
+        - n1+n2: This is invalid because variable names cannot contain arithmetic operators like +. It should be written as n1n2 or n1_plus_n2.
+        - &name: This is invalid because variable names cannot start with the ampersand (&) symbol. It should be written as name or ptr_name.
+        - 3rd_row: This is invalid because variable names cannot start with a number. It should be written as third_row or row3.
+        - n$: This is invalid because variable names cannot contain special characters like $. It should be written as n_dollar or n_money.
+        - float: This is invalid because float is a reserved keyword in C. It should be written as float_value or float_num.
+        - Sum Total: This is invalid because variable names cannot contain spaces. It should be written as SumTotal or sum_total.
+        - Row Total: This is invalid because variable names cannot contain spaces. It should be written as RowTotal or row_total.
+        - Column-total: This is invalid because variable names cannot contain hyphens (-). It should be written as Column_total or column_total.
+
+17. What would be the value of x after execution of the following statement?
+        int x, y = 10;
+        char z = 'a';
+        x = y + z;
+    answer: The value of x after the execution of the statement x = y + z; would be 107. This is because the ASCII value of the character 'a' is 97, and when added to the integer value 10, it results in 107. The character 'a' is implicitly converted to its ASCII value during the addition operation.
+
+18. Explain the following with examples:
+    (a) Enumerated types
+    (b) Type def
+    answer: 
+        (a) Enumerated types: Enumerated types are user-defined data types in C that consist of a set of named integer constants. They are declared using the enum keyword followed by a list of constant names enclosed in curly braces. For example, the following declaration defines an enumeration type called color with three constant values:
+            enum color {RED, GREEN, BLUE};
+        Enumerated types provide a way to define and work with named integer constants that have a specific meaning or value. They make the code more readable and maintainable by using descriptive constant names instead of raw integer values. Enumerated types help prevent errors and improve code quality by enforcing type safety and restricting the values that can be assigned to variables.
+        (b) Type def: The typedef keyword in C is used to create data type aliases or identifiers. It allows programmers to define custom data types that can be used to declare variables of a specific type. For example, the following typedef statement creates a data type identifier called INT32:
+            typedef int INT32;
+        This statement defines INT32 as an alias for the int data type, allowing programmers to use INT32 to declare variables of type int. Typedefs are commonly used to create more descriptive and meaningful data type names, improve code readability, and enhance portability by abstracting the underlying data types.
+
+19. Distinguish between the following:
+    (a) Global and local variables
+    (b) Initialization and assignment of Variables
+    (c) Automatic and static variables
+    answer: 
+        (a) Global and local variables:
+            - Global variables are declared outside of any function and are accessible to all functions in a program. They have a global scope and retain their values throughout the execution of the program.
+            - Local variables are declared inside a function and are only accessible within that function. They have a local scope and their values are limited to the block in which they are declared.
+        (b) Initialization and assignment of Variables:
+            - Initialization of a variable involves assigning an initial value to the variable at the time of declaration. For example, int x = 10; initializes the variable x with the value 10.
+            - Assignment of a variable involves changing the value of the variable after it has been declared. For example, x = 20; assigns the value 20 to the variable x.
+        (c) Automatic and static variables:
+            - Automatic variables are declared inside a function without the static keyword and are created and destroyed each time the function is called. They have a local scope and their values are not retained between function calls.
+            - Static variables are declared inside a function with the static keyword and retain their values between function calls. They are created once when the program starts and retain their values throughout the execution of the program.
