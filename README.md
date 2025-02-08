@@ -35,6 +35,6 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ## Author
 
-This project is maintained by [Your Name].
+This project is maintained by Saidul Islam, CSE-4, Netrokona University, Netrokona.
 
 Happy coding!
