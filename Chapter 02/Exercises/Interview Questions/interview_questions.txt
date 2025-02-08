@@ -1,0 +1,12 @@
+1. Name some of the key features of C programming language.
+    answer: C is a robust language with a rich set of built-in functions and operators. It is a general-purpose language that can be used for a wide variety of applications. C is a structured language that allows for modular programming and code reusability. It is a powerful language that provides low-level access to system resources and hardware. C is a portable language that can be compiled and run on a wide range of platforms. It is a fast and efficient language that is widely used in system programming, embedded systems, and application development.
+2. Which symbol is used to indicate the end of most C programming statements?
+    answer: The semicolon (;) is used to indicate the end of most C programming statements.
+3. Do you consider C is a hight-level programming language?
+    answer: C is considered a high-level programming language because it provides a high level of abstraction from the underlying hardware and system resources. It allows programmers to write code that is independent of the specific hardware and operating system, making it easier to develop portable and maintainable software.
+4. Which punctuation symbols are used to represent code blocks in C?
+    answer: Curly braces ({ and })
+5. Which punctuation is the starting point of a C program?
+    answer: The starting point of a C program is the opening curly brace ({) that marks the beginning of the main function.
+6. Which return value of main() function is indicates successful completion of the program?
+    answer: The return value of 0 indicates successful completion of the program.
