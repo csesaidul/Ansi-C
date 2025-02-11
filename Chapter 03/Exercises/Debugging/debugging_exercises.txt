@@ -1,0 +1,47 @@
+1. Find errors, if any, int the following declaration statements.
+        Int x;
+        float letter, DIGIT;
+        double = p, q
+        exponent alpha, beta;
+        m,n,z = INTEGER
+        short char c;
+        long int m; count;
+        long float temp;
+    answer:
+        int x;
+        float letter, DIGIT;
+        double p, q;
+        double exponent alpha, beta;
+        int m,n,z = INTEGER;
+        char c;
+        long int m, count;
+        float temp;
+
+2. Identify syntax errors in the following program. After corrections, what output would you expect when you execute it?
+    #define PI 3.14159
+    main()
+    {
+        int R,C;    /* R-Radius of circle
+        font perimeter; /* C-Circumference of circle */
+        float area; /* A-Area of circle */
+        C = PI
+        R = 5;
+        Perimeter = 2.0 * C *R;
+        Area = C*R*R;
+        printf("%f", "%d", &perimeter, &area)
+    }
+    answer:
+        #define PI 3.14159
+        main()
+        {
+            int R,C;    /* R-Radius of circle */
+            int perimeter; /* C-Circumference of circle */
+            float area; /* A-Area of circle */
+            C = PI;
+            R = 5;
+            perimeter = 2.0 * C *R;
+            area = C*R*R;
+            printf("%d %f", perimeter, area);
+        }
+        output:
+            31 78.53975
